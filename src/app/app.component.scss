@@ -1,0 +1,45 @@
+.container-pages {
+
+    transition: all 0.3s ease-in-out;
+  
+    position: relative;
+  
+    margin-left: 0rem;
+  
+   
+  
+    width: 100%;
+  
+    z-index: 2;
+  
+   
+  
+    &.sidebar-opened {
+  
+      width: calc(100% - 15rem);
+  
+      margin-left: 15rem;
+  
+    }
+  
+  }
+  
+   
+  
+  ::ng-deep {
+  
+    &.p-sidebar-left {
+  
+      width: 15rem !important;
+  
+    }
+  
+   
+  
+    &.p-sidebar-mask {
+  
+      display: none;
+  
+    }
+  
+  }

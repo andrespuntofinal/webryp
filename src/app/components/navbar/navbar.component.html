@@ -1,0 +1,20 @@
+<p-menubar [model]="items">
+  <ng-template pTemplate="start">
+    <img
+      src="https://primefaces.org/cdn/primeng/images/primeng.svg"
+      height="40"
+      class="mr-2"
+    />
+  </ng-template>
+  <ng-template pTemplate="end">
+    <input type="text" pInputText placeholder="Search" class="w-full" />
+    <img
+      src="../assets/img/logob.png"
+      alt="2"
+      (click)="
+        sidebarVisible = !sidebarVisible;
+        eventActionSidebar.emit(sidebarVisible)
+      "
+    />
+  </ng-template>
+</p-menubar>
